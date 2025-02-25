@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison and Logical</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav_title" data-bs-theme="dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand col-sm-4 bg-info" style="padding: 5px;" href="index.html">JAVASCRRIPT PROJECT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav col-sm-8 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">AboutMe</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="profile.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Compare
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="VAR&LET&CONST.html">Compare Var, Let, Const</a></li>
+                            <li><a class="dropdown-item" href="null&undefined.html">Null&Undefined</a></li>
+                            <li><a class="dropdown-item" href="compare&contrast.html">Comparison and Logical</a></li>
+                            <li><a class="dropdown-item" href="Employment.html">Employment</a></li>
+                            <li><a class="dropdown-item" href="vote.html">Vote</a></li>
+                            <li><a class="dropdown-item" href="civilService.html">Civi Service</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="#">TBD</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color: cadetblue;">
+        <h1 style="background-color: darkkhaki;">COMPARE AND CONTRAST COMPARISON OPERATOR == AND ===</h1>
+        <i style="text-shadow: 2px 2px 2px white;">When programming in JavaScript, you'll need to compare variables
+            sometimes. To do so, you can use the
+            operators "=="
+            and "===," they will tell you if the outcome of the comparison is true or false. Even though these operators
+            look
+            very similar, they differ when comparing the variables'</i> elements:
+        <p><b style="color:rgba(255, 0, 0, 0.705);">==: compares the value of the variables</b></p>
+        <p><b style="color: rgba(255, 0, 0, 0.705);">===: compares the type and value of the variables</b></p>
+
+        <div style="background-color: deeppink;">
+            <p>For example, 5 === "5" will return a false result. Even though the value of both variables is the same,
+                their type
+                is not; one of them is a String ("5"), and the other one is an Integer (5).
+
+                On the other hand, 5 == "5" will return a true result. Both variables have the same value; therefore,
+                the result
+                will be true.</p>
+        </div>
+
+        <p style="text-shadow: 2px 2px 2px white;">The main difference between the two operators is how they compare
+            values. The == operator compares the values
+            of two
+            variables after performing type conversion if necessary. On the other hand, the === operator compares the
+            values of
+            two variables without performing type conversion.</p>
+        <div style="background-color:darkviolet;">
+            <div>
+                <h1 style="background-color: darkkhaki;">COMPARE COMPARISON TO LOGICAL OPERATOR WITH COPIOUS EXAMPLES
+                </h1>
+            </div>
+            <div>
+                <p>
+                <h3 style="background-color: white; width: fit-content; margin-left: 15px;">Comparison Operators</h3>
+                <br>
+                You may be familiar with comparison operators from math class. Let’s make sure there aren’t any gaps in
+                your knowledge.
+                </p>
+                <ol style="color: white;">
+                    <li>Less than (<) — returns true if the value on the left is less than the value on the right,
+                            otherwise it returns false.</li>
+                    <li>Greater than (>) — returns true if the value on the left is greater than the value on the right,
+                        otherwise it returns false.</li>
+                    <li>Less than or equal to (<=) — returns true if the value on the left is less than or equal to the
+                            value on the right, otherwise it returns false.</li>
+                    <li>Greater than or equal to (>=) — returns true if the value on the left is greater than or equal
+                        to
+                        the value on the right, otherwise it returns false.</li>
+                    <li>Equal to (===) — returns true if the value on the left is equal to the value on the right,
+                        otherwise
+                        it returns false.</li>
+                    <li>Not equal to (!==) — returns true if the value on the left is not equal to the value on the
+                        right,
+                        otherwise it returns false.</li>
+                </ol>
+
+                <p>
+                <h3 style="background-color: white; width: fit-content; margin-left: 15px;">Logical Operators</h3> <br>
+                Comparison operators allow us to assert the equality of a statement with JavaScript. For example, we can
+                assert whether two values or expressions are equal with ===, or, whether one value is greater than
+                another with >. <br>
+
+                There are scenarios, however, in which we must assert whether multiple values or expressions are true.
+                In JavaScript, we can use logical operators to make these assertions.
+                </p>
+
+                <ol style="color: white;">
+                    <li>&& (and) — This operator will be truthy (act like true) if and only if the expressions on both
+                        sides
+                        of it are true.</li>
+                    <li>
+                        || (or) — This operator will be truthy if the expression on either side of it is true.
+                        Otherwise, it
+                        will be falsy (act like false).
+                    </li>
+                </ol>
+            </div>
+            <div class="row" style="margin-left: px;">
+                <img src="compa.PNG" alt="" height="px">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

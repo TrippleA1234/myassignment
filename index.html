@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .nav_title {
+            color: white;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        .sub_heading {
+            font-size: 20px;
+            color: rgba(255, 0, 0, 0.603);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: rgba(91, 126, 114, 0.226);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav_title" data-bs-theme="dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand col-sm-4 bg-info" style="padding: 5px;" href="index.html">JAVASCRRIPT PROJECT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav col-sm-8 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">AboutMe</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Compare
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="VAR&LET&CONST.html">Var, Let, Const</a></li>
+                            <li><a class="dropdown-item" href="null&undefined.html">Null&Undefined</a></li>
+                            <li><a class="dropdown-item" href="compare&contrast.html">Comparison and Logical</a></li>
+                            <li><a class="dropdown-item" href="Employment.html">Employment</a></li>
+                            <li><a class="dropdown-item" href="vote.html">Vote</a></li>
+                            <li><a class="dropdown-item" href="civilService.html">Civil Service</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="#">TBD</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p class="container-fluid" style="font-size: 20px; background-color: rgba(0, 255, 115, 0.932); text-align: center;">
+        <b>
+            INTRODUCTION TO JAVASCRRIPT
+        </b>
+    </p>
+    <p class="container-fluid">
+        Around 10 years ago, Jeff Atwood (the founder of stackoverflow) made a case that JavaScript is going to be the
+        future and he coined the “Atwood Law” which states that Any application that can be written in JavaScript will
+        eventually be written in JavaScript. Fast-forward to today, 10 years later, if you look at it rings truer than
+        ever. JavaScript is continuing to gain more and more adoption.
+    </p>
+    <p class="container-fluid">
+        <b class="sub_heading">JavaScript is announced</b> <br>
+        JavaScript was initially created by Brendan Eich of Netscape and was first announced in a press release by
+        Netscape in 1995. It has a bizarre history of naming; initially it was named Mocha by the creator, which was
+        later renamed to LiveScript. In 1996, about a year later after the release, NetScape decided to rename it to be
+        JavaScript with hopes of capitalizing on the Java community (although JavaScript did not have any relationship
+        with Java) and released Netscape 2.0 with the official support of JavaScript.
+    </p>
+    <p class="container-fluid">
+        <b class="sub_heading">ES1, ES2 and ES3</b> <br>
+        In 1996, Netscape decided to submit it to ECMA International with the hopes of getting it standardized. First
+        edition of the standard specification was released in 1997 and the language was standardized. After the initial
+        release, ECMAScript was continued to be worked upon and in no-time two more versions were released ECMAScript 2
+        in 1998 and ECMAScript 3 in 1999.
+    </p>
+    <p class="container-fluid">
+        <b class="sub_heading">Decade of Silence and ES4</b> <br>
+        After the release of ES3 in 1999, there was a complete silence for a decade and no changes were made to the
+        official standard. There was some work on the fourth edition in the initial days; some of the features that were
+        being discussed included classes, modules, static typings, destructuring etc. It was being targeted to be
+        released by 2008 but was abandoned due to political differences concerning language complexity. However, the
+        vendors kept introducing the extensions to the language and the developers were left scratching their heads —
+        adding polyfills to battle compatibility issues between different browsers.
+    </p>
+    <p class="container-fluid">
+        <b class="sub_heading">From silence to ES5</b> <br>
+        Google, Microsoft, Yahoo and other disputers of ES4 came together and decided to work on a less ambitious update
+        to ES3 tentatively named ES3.1. But the teams were still fighting about what to include from ES4 and what not.
+        Finally, in 2009 ES5 was released mainly focusing on fixing the compatibility and security issues etc. But there
+        was not much of a splash in the water — it took ages for the vendors to incorporate the standards and many
+        developers were still using ES3 without being aware of the “modern” standards.
+    </p>
+    <p class="container-fluid">
+        <b class="sub_heading">Release of ES6 — ECMAScript 2015</b> <br>
+        After a few years of the release of ES5, things started to change, TC39 (the committee under ECMA international
+        responsible for ECMAScript standardization) kept working on the next version of ECMAScript (ES6) which was
+        originally named ES Harmony, before being eventually released with the name ES2015. ES2015 adds significant
+        features and syntactic sugar to allow writing complex applications. Some of the features that ES6 has to offer
+        include
+    <ol style="list-style-type: circle;">
+        <li>Classes, Modules, Arrows</li>
+        <li>Enhanced object literals</li>
+        <li>Template strings</li>
+        <li>Destructuring</li>
+        <li>Default and rest parameters</li>
+        <li>Spread operator</li>
+        <li>let and const</li>
+        <li>Proxies and Symbols</li>
+        <li>Promises</li>
+        <li>Math, Number, String, Array, Object APIs and etc</li>
+    </ol>
+    </p>
+    <p class="container-fluid">
+        Browser support for ES6 is still scarce but everything that ES6 has to offer is still available to developers by
+        transpiling the ES6 code to ES5. With the release of 6th version of ECMAScript, TC39 decided to move to yearly
+        model of releasing updates to ECMAScript so to make sure that the new features are added as soon as they are
+        approved and we don’t have to wait for the full specification to be drafted and approved — thus 6th version of
+        ECMAScript was renamed as ECMAScript 2015 or ES2015 before the release in June 2015. And the next versions of
+        ECMAScript were decided to published in June of every year.
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+   <script> 
+     let dayHour = new Date().getHours();
+    if ( dayHour <12){
+        alert('GoodMorning.')
+    }
+    else if (dayHour < 17){
+        alert('GoodAfternoon.')
+    }
+    else if (dayHour < 20){
+        alert('GoodEvening.')
+    }
+    else {
+        alert('GoodNight.')
+    };
+    
+    </script>
+</body>
+
+</html>
