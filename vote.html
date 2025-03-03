@@ -17,6 +17,24 @@
             color: rgba(255, 0, 0, 0.603);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        .cal_1 {
+        background-color: gray;
+        color: black;
+        padding: 30px;
+        border-radius: 6px;
+        width: fit-content;
+        margin-left: 30px ;
+        margin-top: 30px;
+    }
+
+    .button_2 {
+        background-color: #E00A0A;
+        color: white;
+        border: none;
+        width: 80px;
+        padding: 5px;
+        border-radius: 10px;
+    }
     </style>
 </head>
 
@@ -37,6 +55,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="profile.html">AboutMe</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vote.html">Vote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Employment.html">Calculators</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -46,9 +70,6 @@
                             <li><a class="dropdown-item" href="VAR&LET&CONST.html">Compare Var, Let, Const</a></li>
                             <li><a class="dropdown-item" href="null&undefined.html">Null&Undefined</a></li>
                             <li><a class="dropdown-item" href="compare&contrast.html">Comparison and Logical</a></li>
-                            <li><a class="dropdown-item" href="Employment.html">Employment</a></li>
-                            <li><a class="dropdown-item" href="vote.html">Vote</a></li>
-                            <li><a class="dropdown-item" href="civilService.html">Civil Service</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -59,11 +80,33 @@
             </div>
         </div>
     </nav>
+    <div class="cal_1">
+        <label style="font-size: large;" for="age">Userage</label> <br> <br>
+        <input type="number" id="age"> <br> <br>
+        <p id="result"> </p> <br>
+        <button class="button_2" onclick="engine()">Check Status</button>
+    </div>
+
+
+
 
     <script>
-        let userage = prompt('how old are you?')
-        let vote = (userage>18)? 'you can': 'you cannot';
-        console.log(`${vote} vote`)
+        // let userage = prompt('how old are you?')
+        // let vote = (userage>18)? 'you can': 'you cannot';
+        // console.log(`${vote} vote`)
+
+        function engine() {
+            let age = document.getElementById("age").value;
+            let result = document.getElementById("result");
+            if (age >= 18) {
+                result.innerText = "you can vote.";
+            } else {
+                result.innerText = "you cannot vote.";
+            }
+
+
+        }
     </script>
 </body>
+
 </html>
