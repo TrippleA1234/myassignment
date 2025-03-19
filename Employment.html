@@ -220,6 +220,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Employment.html">Calculators</a>
                     </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="simpleCal.html">Loop Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guessGame.html">Game</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -351,7 +358,7 @@
                 <option value="11">11months</option>
                 <option value="12">12months</option>
             </select> <br> <br> <br> <br>
-            <button  class="button_4" id="myBtn2"> Calculate ROI</button> <br> <br>
+            <button class="button_4" id="myBtn2"> Calculate ROI</button> <br> <br>
             <p style="color: white;" id="rest_2">
 
             </p>
@@ -469,7 +476,7 @@
             document.getElementById('rest_1').innerText = (`You will pay #${monthlyRep}monthly if you borrow #${brorrowAmt} from us for ${tenure}year`);
         }
         document.getElementById('myBtn').addEventListener('click', loanAmt);
-        
+
         //Investment calculator
 
         let investRoi = function () {
@@ -478,7 +485,7 @@
             let duration = Number(document.getElementById('month').value);
             let totalRoi = monthlyInv * duration;
             let finalReturn = totalRoi + invest;
-            document.getElementById('rest_2').innerText =  (`You will withdraw #${finalReturn} if you invest #${invest} with us for ${duration}month`);
+            document.getElementById('rest_2').innerText = (`You will withdraw #${finalReturn} if you invest #${invest} with us for ${duration}month`);
         }
         document.getElementById('myBtn2').addEventListener('click', investRoi)
     </script>

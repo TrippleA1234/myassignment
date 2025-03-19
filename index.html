@@ -49,6 +49,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Employment.html">Calculators</a>
                     </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="simpleCal.html">Loop Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guessGame.html">Game</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -144,21 +151,21 @@
         crossorigin="anonymous"></script>
 
 
-   <script> 
-     let dayHour = new Date().getHours();
-    if ( dayHour <12){
-        alert('GoodMorning.')
-    }
-    else if (dayHour < 17){
-        alert('GoodAfternoon.')
-    }
-    else if (dayHour < 20){
-        alert('GoodEvening.')
-    }
-    else {
-        alert('GoodNight.')
-    };
-    
+    <script>
+        let dayHour = new Date().getHours();
+        if (dayHour < 12) {
+            alert('GoodMorning.')
+        }
+        else if (dayHour < 17) {
+            alert('GoodAfternoon.')
+        }
+        else if (dayHour < 20) {
+            alert('GoodEvening.')
+        }
+        else {
+            alert('GoodNight.')
+        };
+
     </script>
 </body>
 
